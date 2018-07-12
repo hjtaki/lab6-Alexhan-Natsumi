@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/hangman"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/answerLetter1"
+            android:layout_gravity="center"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"/>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="B"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="C"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="D"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_E"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_F"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="F"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_G"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="G"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_H"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="H"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_I"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="I"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_J"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="J"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_K"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="K"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_L"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="L"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_M"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="M"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_N"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_O"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="O"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="P"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_Q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Q"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_R"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="R"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="S"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_T"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="T"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_U"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="U"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_V"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="V"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_W"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="W"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_X"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_Y"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y"/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/textview_Z"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Z"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SCORE : "/>
+        <TextView
+            android:textSize="30sp"
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/newGameBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startNewGame"
+        android:text="new game" />
+
+
+
+
+
+
+</LinearLayout>
