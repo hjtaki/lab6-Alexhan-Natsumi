@@ -37,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
     TextView score;
     Button btn;
 
+
+
+
     TextView textView_A;
     TextView textView_B;
     TextView textView_C;
