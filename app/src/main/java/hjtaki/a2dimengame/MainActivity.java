@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
     ImageButton btn;
 
 
-
-
     TextView textView_A;
     TextView textView_B;
     TextView textView_C;
