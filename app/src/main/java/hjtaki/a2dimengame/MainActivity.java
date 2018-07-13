@@ -28,17 +28,17 @@ public class MainActivity extends AppCompatActivity {
     private InputStream inputStream;
     private BufferedReader bufferedReader;
     private List<String> dataArray;
-    StringBuilder currentAnswer;
+    private StringBuilder currentAnswer;
     private ImageView imageView;
     private int SCORE_INCREASEMENT = 10;
-    static int imageNum = 5;
-    static int finalScore = 0;
-    TextView answer1;
-    String answer;
-    TextView score;
-    ImageButton btn;
-
-
+    private static int imageNum = 5;
+    private static int finalScore = 0;
+    private int NUMOFLINEINFILE = 5;
+    private TextView answer1;
+    private String answer;
+    private TextView score;
+    private ImageButton btn;
+    
     TextView textView_A;
     TextView textView_B;
     TextView textView_C;
@@ -113,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
 
         // 1. read file
         readFile();
-
 
         // 2. choose random one word(select one)
         randomVoca();
@@ -788,20 +787,16 @@ public class MainActivity extends AppCompatActivity {
                 checkAnswer();
             }
         });
-
-
-
-
     }
 
     private void randomVoca() {
         Random rand = new Random();
-        int n = rand.nextInt(10);// 0 ~
+        int n = rand.nextInt(NUMOFLINEINFILE);// 0 ~
 
-        answer = dataArray.get(0).toUpperCase().trim(); //abandon
+        answer = dataArray.get(n).toUpperCase().trim(); //abandon
         String currentAnswer1 ="";
 
-        for (int i = 0; i < dataArray.get(0).length(); i++){
+        for (int i = 0; i < dataArray.get(n).length(); i++){
             currentAnswer1 += "x";
         }
         currentAnswer = new StringBuilder(currentAnswer1);
@@ -864,7 +859,6 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this,"FAILED! -10 points",Toast.LENGTH_LONG).show();
                 MainActivity.finalScore -= SCORE_INCREASEMENT;
                 score.setText(String.valueOf(MainActivity.finalScore));
-                startNewGame(btn);
                 break;
             }
         }
