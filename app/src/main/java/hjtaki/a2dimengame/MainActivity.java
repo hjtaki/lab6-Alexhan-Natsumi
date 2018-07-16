@@ -150,7 +150,7 @@ public class MainActivity extends AppCompatActivity {
 //                    String imageName = "hangman"+imageNum;
 //                    int id = getResources().getIdentifier(imageName, "drawable", getPackageName());
 //                    imageView.setImageResource(id);
-//                    Toast.makeText(MainActivity.this,"wrong!",Toast.LENGTH_LONG).show();
+    //                    Toast.makeText(MainActivity.this,"wrong!",Toast.LENGTH_LONG).show();
 //                }
 //                textViews[j].setClickable(false);
 //                textViews[j].setTextColor(Color.parseColor("#ffffff"));
@@ -174,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
                     String imageName = "hangman"+imageNum;
                     int id = getResources().getIdentifier(imageName, "drawable", getPackageName());
                     imageView.setImageResource(id);
-                    Toast.makeText(MainActivity.this,"wrong!",Toast.LENGTH_LONG).show();
+                    Toast.makeText(MainActivity.this,"wrong!",Toast.LENGTH_SHORT).show();
                 }
                 textView_A.setClickable(false);
                 textView_A.setTextColor(Color.parseColor("#ffffff"));
@@ -829,7 +829,7 @@ public class MainActivity extends AppCompatActivity {
         if((answer1.getText().toString()).equals(answer)){
             MainActivity.finalScore += SCORE_INCREASEMENT;
             score.setText(String.valueOf(MainActivity.finalScore));
-            Toast.makeText(this,"correct!, you got 10 points",Toast.LENGTH_LONG).show();
+            Toast.makeText(this,"correct!, you got 10 points",Toast.LENGTH_SHORT).show();
             startNewGame(btn);
 
         }
@@ -856,7 +856,7 @@ public class MainActivity extends AppCompatActivity {
             }
             case 1: {
                 MainActivity.imageNum = 0;
-                Toast.makeText(this,"FAILED! -10 points",Toast.LENGTH_LONG).show();
+                Toast.makeText(this,"FAILED! -10 points",Toast.LENGTH_SHORT).show();
                 MainActivity.finalScore -= SCORE_INCREASEMENT;
                 score.setText(String.valueOf(MainActivity.finalScore));
                 break;
@@ -865,7 +865,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void startNewGame(View view) {
-        Toast.makeText(this,"NEW GAME STARTED",Toast.LENGTH_LONG).show();
+        Toast.makeText(this,"NEW GAME STARTED",Toast.LENGTH_SHORT).show();
         readFile();
         randomVoca();
         imageNum = 5;
